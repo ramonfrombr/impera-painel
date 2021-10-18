@@ -4,12 +4,17 @@ import axios from "axios";
 import { staticBlock } from "@babel/types";
 import Acao from "../acao/Acao";
 
+// API TOKEN
 const TOKEN = "c5lu7vaad3if1qn1so3g";
+
+// API URL
 const BASE_URL = "https://finnhub.io/api/v1/quote";
 
 const Acoes = () => {
+	// Dados da sações
 	const [dadosAcoes, definirDadosAcoes] = useState([]);
 
+	// Seleciona os dados das ações no API
 	const selecionarDadosAcoes = (acao) => {
 		return axios
 			.get(`${BASE_URL}?symbol=${acao}&token=${TOKEN}`)
@@ -21,6 +26,7 @@ const Acoes = () => {
 	useEffect(() => {
 		let dados = [];
 
+		// Códigos das ações
 		const listaAcoes = [
 			"AAPL",
 			"MSFT",
@@ -32,8 +38,10 @@ const Acoes = () => {
 			"SBUX",
 		];
 
+		// Códigos das moedas
 		const listaMoedas = ["USD", "GBP", "JPY", "CAD", "EUR", "BRL"];
 
+		// Códigos das criptomoedas
 		const listaCripto = ["BTC", "ETH"];
 
 		//selecionarMinhasAcoes();
@@ -61,12 +69,6 @@ const Acoes = () => {
 	return (
 		<div className="acoes">
 			<div className="acoes__container">
-				<h3 className="secao__cabecalho">Bovespa/B3</h3>
-
-				<div className="acoes__conteudo"></div>
-			</div>
-
-			<div className="acoes__container">
 				<h3 className="secao__cabecalho">NYSE</h3>
 
 				<div className="acoes__conteudo">
@@ -79,6 +81,12 @@ const Acoes = () => {
 						/>
 					))}
 				</div>
+			</div>
+
+			<div className="acoes__container">
+				<h3 className="secao__cabecalho">Bovespa/B3</h3>
+
+				<div className="acoes__conteudo"></div>
 			</div>
 
 			<div className="acoes__container">
