@@ -1,0 +1,51 @@
+.acao {
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+	padding: 5px;
+	color: rgb(155, 155, 155);
+
+	&:hover {
+		background-color: rgb(255, 220, 130);
+		color: rgb(65, 65, 65);
+		cursor: pointer;
+	}
+}
+
+.acao__intro h3 {
+	font-size: 16px;
+	font-weight: bold;
+	padding-bottom: 2px;
+	text-align: left;
+	margin: 0;
+}
+
+.acao__nAcoes {
+	margin: 0;
+}
+
+.acao__numeros {
+	text-align: right;
+	font-size: 10pt;
+	font-weight: 500;
+	margin: 0;
+}
+
+.acao__nAcoes {
+	font-size: 10pt;
+}
+
+.acao__preco {
+	margin: 0;
+	display: flex;
+	color: rgb(255, 255, 255);
+	font-size: 10pt;
+	padding: 2px;
+	border-radius: 3px;
+	background-color: rgb(0, 100, 0);
+	border: rgba(16, 173, 16, 0.986) 1px solid;
+}
+
+.acao__porcentagem {
+	margin-bottom: 0;
+}

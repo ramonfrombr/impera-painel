@@ -1,0 +1,21 @@
+.acoes__container {
+	flex-direction: column;
+	flex: 1;
+
+	margin-bottom: 20px;
+
+	.secao__cabecalho {
+		color: rgb(175, 175, 175);
+	}
+}
+
+.acoes__conteudo {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #fcfafa;
+	border-radius: 5px;
+	border: 1px solid #dfca0c;
+	min-height: 100px;
+	padding: 5px;
+}
