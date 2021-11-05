@@ -83,7 +83,8 @@ const Acoes = () => {
 				</div>
 			</div>
 
-			<div className="acoes__container">
+			{/*
+            <div className="acoes__container">
 				<h3 className="secao__cabecalho">Bovespa/B3</h3>
 
 				<div className="acoes__conteudo"></div>
@@ -100,6 +101,8 @@ const Acoes = () => {
 
 				<div className="acoes__conteudo"></div>
 			</div>
+            
+            */}
 		</div>
 	);
 };

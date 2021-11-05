@@ -31,13 +31,18 @@ function App() {
 							<div className="app__container">
 								<section className="app__conteudoPrincipal">
 									<Painel />
-									<Noticias />
+									{/*
+                                    <Noticias />
+                                    */}
 								</section>
 
 								<section className="app__conteudoSecundario">
 									<Acoes />
-									<Cambio />
-									<Cripto />
+
+									{/*
+                                        <Cambio />
+                                        <Cripto />
+                                    */}
 								</section>
 							</div>
 						</Rota>
